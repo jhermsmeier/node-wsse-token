@@ -1,0 +1,36 @@
+{
+  "name": "wsse-token",
+  "version": "1.0.0",
+  "description": "Web Services Security Extension (WSSE) Username Authentication Token",
+  "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
+  "license": "MIT",
+  "keywords": [
+    "wsse",
+    "soap",
+    "authorization",
+    "authentication",
+    "oasis",
+    "x-wsse",
+    "header",
+    "http"
+  ],
+  "main": "lib/wsse-token.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~2.5.3"
+  },
+  "homepage": "https://github.com/jhermsmeier/node-wsse-token",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhermsmeier/node-wsse-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-wsse-token/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd"
+  }
+}
