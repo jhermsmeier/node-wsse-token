@@ -1,6 +1,6 @@
 {
   "name": "wsse-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Services Security Extension (WSSE) Username Authentication Token",
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "license": "MIT",
