@@ -17,7 +17,7 @@
   "main": "lib/wsse-token.js",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "~2.5.3"
+    "mocha": "^6.0.0"
   },
   "homepage": "https://github.com/jhermsmeier/node-wsse-token",
   "repository": {
