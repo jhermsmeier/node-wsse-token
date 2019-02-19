@@ -1,9 +1,9 @@
 var assert = require( 'assert' )
 var WSSEToken = require( '..' )
 
-suite( 'WSSE Token', function() {
+describe( 'WSSE Token', function() {
 
-  test( 'constructor', function() {
+  specify( 'constructor', function() {
     assert.doesNotThrow( function() {
       var token = new WSSEToken({
         user: 'ihatesoap',
@@ -12,7 +12,7 @@ suite( 'WSSE Token', function() {
     })
   })
 
-  test( 'empty username', function() {
+  specify( 'empty username', function() {
     assert.throws( function() {
       var token = new WSSEToken({
         user: '',
@@ -21,7 +21,7 @@ suite( 'WSSE Token', function() {
     })
   })
 
-  test( 'missing username', function() {
+  specify( 'missing username', function() {
     assert.throws( function() {
       var token = new WSSEToken({
         password: 'letthatsinkin'
@@ -29,7 +29,7 @@ suite( 'WSSE Token', function() {
     })
   })
 
-  test( 'empty password', function() {
+  specify( 'empty password', function() {
     assert.throws( function() {
       var token = new WSSEToken({
         user: 'ihatesoap',
@@ -38,7 +38,7 @@ suite( 'WSSE Token', function() {
     })
   })
 
-  test( 'missing password', function() {
+  specify( 'missing password', function() {
     assert.throws( function() {
       var token = new WSSEToken({
         user: 'ihatesoap',
