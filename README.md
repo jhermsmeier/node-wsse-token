@@ -20,8 +20,16 @@ var WSSEToken = require( 'wsse-token' )
 
 ```js
 var token = new WSSEToken({
-  user: 'ihatesoap',
-  password: 'letthatsinkin'
+  // Credentials
+  user: 'example',
+  password: 'secret',
+  // Byte-length and encoding of the nonce (optional)
+  nonceBytes: 16,
+  nonceEncoding: 'hex',
+  // Digest options (optional)
+  digestAlgorithm: 'sha1',
+  digestEncoding: 'hex',
+  digestBase64: true,
 })
 ```
 
@@ -30,5 +38,5 @@ token.toString()
 ```
 
 ```js
-'UsernameToken Username="ihatesoap", PasswordDigest="ZTQwOGZiMjQzZjQ2YWYxZjczOTVmYmY5ZDMzZTBiYjhmNjg4ZDliYw==", Nonce="3fb1ee9a37018d1ad57f76f2b14d5e90", Created="2016-07-22T16:35:04.163Z"'
+'UsernameToken Username="example", PasswordDigest="dc8b87d1786f37261ae2a5f7f0940fd650635d4a", Nonce="69dc375f3c5d6b24a45801962ad74812", Created="2019-07-11T16:40:43.125Z"'
 ```
